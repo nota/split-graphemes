@@ -1,4 +1,7 @@
+import {khmer} from './khmer'
+
 const patterns = [
+  khmer,
   '.'
 ]
 
