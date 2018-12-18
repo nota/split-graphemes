@@ -27,7 +27,6 @@ const chars = splitGraphemes('👨‍👩‍👦‍👦') // ['👨‍👩‍�
 ### Khmer characters
 
 ```js
-// It is interpreted as 8 characters.
 Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', 'ដ', 'ិ', '៍']
 ```
 
