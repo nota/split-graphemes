@@ -11,7 +11,7 @@
     "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill"
   },
   "keywords": [
-    "grapheme"
+    "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
   ],
   "author": "Daiki Iizuka <daiiz@notainc.com>",
   "license": "MIT",
