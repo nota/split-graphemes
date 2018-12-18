@@ -1,7 +1,7 @@
 {
   "name": "split-graphemes",
   "version": "0.0.1",
-  "description": "",
+  "description": "Divide the string into graphemes.",
   "main": "index.js",
   "scripts": {
     "build": "run-s build:*",
