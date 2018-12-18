@@ -1,7 +1,7 @@
 # split-graphemes
 
 Divide ligature letters such as Thai, Khmer letters and complex emoji into array of graphemes.
-A grapheme is the minimum unit of writing system of any given language.
+You can simply use this library instead of `Array.from` to get graphemes.
 
 [![CircleCI](https://circleci.com/gh/nota/split-graphemes/tree/master.svg?style=svg)](https://circleci.com/gh/nota/split-graphemes/tree/master)
 
@@ -9,9 +9,6 @@ A grapheme is the minimum unit of writing system of any given language.
 ```
 $ npm install split-graphemes
 ```
-
-## Usage
-You can simply use this library instead of `Array.from` to get graphemes.
 
 ## Examples
 ### Emoji
@@ -31,11 +28,11 @@ const chars = splitGraphemes('👨‍👩‍👦‍👦') // ['👨‍👩‍�
 
 ```js
 // It is interpreted as 8 characters.
-const chars = Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', 'ដ', 'ិ', '៍']
+Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', 'ដ', 'ិ', '៍']
 ```
 
 ```js
-const chars = splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
+splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
 ```
 
 ### Japanese
