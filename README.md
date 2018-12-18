@@ -36,7 +36,7 @@ const chars = Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', '�
 ```
 
 ```js
-const chars = splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុស្ដិ៍']
+const chars = splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
 ```
 
 ## Supported ligature characters
