@@ -1,6 +1,6 @@
 # split-graphemes
 
-Divide ligature letters such as Thai, Khmer letters and complex emoji into array of graphemes.
+Divide ligature letters such as Thai, Khmer letters and complex emoji into array of [graphemes](https://en.wikipedia.org/wiki/Grapheme).
 You can simply use this library instead of `Array.from` to get graphemes.
 
 [![CircleCI](https://circleci.com/gh/nota/split-graphemes/tree/master.svg?style=svg)](https://circleci.com/gh/nota/split-graphemes/tree/master)
@@ -15,7 +15,6 @@ $ npm install split-graphemes
 
 ```js
 // An emoji '👨‍👩‍👦‍👦' consists of 4 people face emoji joined by Zero Width Joiners (ZWJ).
-// This emoji is divided into 7 letters.
 const chars = Array.from('👨‍👩‍👦‍👦') // ['👨', ZWJ, '👩', ZWJ, '👦', ZWJ, '👦']
 ```
 
