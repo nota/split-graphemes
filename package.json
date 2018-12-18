@@ -1,17 +1,25 @@
 {
   "name": "split-graphemes",
   "version": "0.0.1",
-  "description": "",
+  "description": "Divide the string into graphemes.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ --out-dir lib/ --minified",
+    "build": "run-s build:*",
+    "build:clean": "if test -d ./lib; then rm -r ./lib; fi",
+    "build:babel": "babel src/ --out-dir lib/ --minified",
     "watch": "npm run build -- --watch",
     "test": "run-s test:*",
     "test:standard": "standard",
-    "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill"
+    "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill --timeout 20000 --exit",
+    "release": "npm run build && npm run test && npm publish"
   },
   "keywords": [
-    "grapheme"
+    "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
+  ],
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
   ],
   "author": "Daiki Iizuka <daiiz@notainc.com>",
   "license": "MIT",
@@ -30,5 +38,9 @@
     "ignore": [
       "/lib"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nota/split-graphemes.git"
   }
 }
