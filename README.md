@@ -8,7 +8,7 @@ It can also be used for strings containing characters other than ligatures, like
 
 ## Installation
 ```
-$
+$ npm install split-graphemes
 ```
 
 ## Usage
