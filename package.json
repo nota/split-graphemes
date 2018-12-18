@@ -11,7 +11,7 @@
     "test": "run-s test:*",
     "test:standard": "standard",
     "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill --timeout 20000 --exit",
-    "release": "npm run build && npm run test"
+    "release": "npm run build && npm run test && npm publish"
   },
   "keywords": [
     "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
