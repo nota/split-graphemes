@@ -1,6 +1,6 @@
 {
   "name": "split-graphemes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Divide the string into graphemes.",
   "main": "index.js",
   "scripts": {
