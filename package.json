@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ --out-dir lib/ --minified",
+    "build": "run-s build:*",
+    "build:clean": "if test -d ./lib; then rm -r ./lib; fi",
+    "build:babel": "babel src/ --out-dir lib/ --minified",
     "watch": "npm run build -- --watch",
     "test": "run-s test:*",
     "test:standard": "standard",
-    "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill"
+    "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill --timeout 20000 --exit",
+    "release": "npm run build && npm run test"
   },
   "keywords": [
     "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
