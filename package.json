@@ -13,6 +13,11 @@
   "keywords": [
     "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
   ],
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
   "author": "Daiki Iizuka <daiiz@notainc.com>",
   "license": "MIT",
   "devDependencies": {
