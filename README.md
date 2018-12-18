@@ -15,7 +15,7 @@ $
 Use `splitGraphemes(str)` instead of `Array.from(str)` to separate character strings into character units.
 
 ## Examples
-### emoji
+### Emoji
 
 ```js
 // An emoji '👨‍👩‍👦‍👦' consists of 4 people face emoji joined by Zero Width Joiners (ZWJ).
@@ -28,7 +28,7 @@ const chars = Array.from('👨‍👩‍👦‍👦') // ['👨', ZWJ, '👩', Z
 const chars = splitGraphemes('👨‍👩‍👦‍👦') // ['👨‍👩‍👦‍👦']
 ```
 
-## Khmer characters
+### Khmer characters
 
 ```js
 // It is interpreted as 8 characters.
