@@ -1,6 +1,7 @@
 # split-graphemes
 
-Divide ligature letters such as Thai, Khmer letters and complex emoji into array of graphemes. A grapheme is the minimum unit of writing system of any given language.
+Divide ligature letters such as Thai, Khmer letters and complex emoji into array of graphemes.
+A grapheme is the minimum unit of writing system of any given language.
 
 [![CircleCI](https://circleci.com/gh/nota/split-graphemes/tree/master.svg?style=svg)](https://circleci.com/gh/nota/split-graphemes/tree/master)
 
@@ -35,6 +36,16 @@ const chars = Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', '�
 
 ```js
 const chars = splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
+```
+
+### Japanese
+```js
+splitGraphemes('こんにちは') // ['こ', 'ん', 'に', 'ち', 'は']
+```
+
+### English
+```js
+splitGraphemes('Hello') // ['H', 'e', 'l', 'l', 'o']
 ```
 
 ## Supported ligature characters
