@@ -14,7 +14,7 @@
     "release": "npm run build && npm run test && npm publish"
   },
   "keywords": [
-    "grapheme", "emoji", "khmer", "lao", "thai", "myanmar"
+    "grapheme", "emoji", "abugida", "khmer", "lao", "thai", "myanmar"
   ],
   "files": [
     "README.md",

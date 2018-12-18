@@ -1,8 +1,7 @@
 # split-graphemes
 
-Divide ligature letters, such as Thai, Khmer letters and some emoji, that deform or combine glyphs depending on the position of characters into the minimum unit parts, graphemes.
-
-It can also be used for strings containing characters other than ligatures, like alphabets and Japanese.
+Divide ligature letters such as Thai, Khmer letters and complex emoji into array of [graphemes](https://en.wikipedia.org/wiki/Grapheme).
+You can simply use this library instead of `Array.from` to get graphemes.
 
 [![CircleCI](https://circleci.com/gh/nota/split-graphemes/tree/master.svg?style=svg)](https://circleci.com/gh/nota/split-graphemes/tree/master)
 
@@ -11,15 +10,11 @@ It can also be used for strings containing characters other than ligatures, like
 $ npm install split-graphemes
 ```
 
-## Usage
-Use `splitGraphemes(str)` instead of `Array.from(str)` to separate character strings into character units.
-
 ## Examples
 ### Emoji
 
 ```js
 // An emoji '👨‍👩‍👦‍👦' consists of 4 people face emoji joined by Zero Width Joiners (ZWJ).
-// This emoji is divided into 7 letters.
 const chars = Array.from('👨‍👩‍👦‍👦') // ['👨', ZWJ, '👩', ZWJ, '👦', ZWJ, '👦']
 ```
 
@@ -31,12 +26,21 @@ const chars = splitGraphemes('👨‍👩‍👦‍👦') // ['👨‍👩‍�
 ### Khmer characters
 
 ```js
-// It is interpreted as 8 characters.
-const chars = Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', 'ដ', 'ិ', '៍']
+Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', 'ដ', 'ិ', '៍']
 ```
 
 ```js
-const chars = splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
+splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
+```
+
+### Japanese
+```js
+splitGraphemes('こんにちは') // ['こ', 'ん', 'に', 'ち', 'は']
+```
+
+### English
+```js
+splitGraphemes('Hello') // ['H', 'e', 'l', 'l', 'o']
 ```
 
 ## Supported ligature characters
