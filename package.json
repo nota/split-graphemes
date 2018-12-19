@@ -1,6 +1,6 @@
 {
   "name": "split-graphemes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Divide the string into graphemes.",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "release": "npm run build && npm run test && npm publish"
   },
   "keywords": [
-    "grapheme", "emoji", "abugida", "khmer", "lao", "thai", "myanmar"
+    "grapheme", "emoji", "abugida", "brahmic", "khmer", "lao", "thai", "myanmar"
   ],
   "files": [
     "README.md",
