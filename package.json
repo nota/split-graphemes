@@ -18,11 +18,13 @@
     "emoji",
     "abugida",
     "brahmic",
+    "devanagari",
     "khmer",
     "lao",
-    "thai",
     "myanmar",
-    "telugu"
+    "telugu",
+    "thai",
+    "tibetan"
   ],
   "files": [
     "README.md",

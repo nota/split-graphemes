@@ -1,12 +1,15 @@
+import {devanagari} from './devanagari'
 import {khmer} from './khmer'
 import {lao} from './lao'
 import {myanmar} from './myanmar'
+import {telugu} from './telugu'
 import {thai} from './thai'
+import {tibetan} from './tibetan'
 import {countryFlag, keyCap, emojiVariation} from './emoji'
 
 const patterns = [
   countryFlag, keyCap, emojiVariation,
-  khmer, thai, lao, myanmar,
+  devanagari, khmer, lao, myanmar, telugu, thai, tibetan,
   '.'
 ]
 
