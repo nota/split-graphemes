@@ -6,6 +6,7 @@ import {testBreak} from './helper'
 describe('WordBreakTibetan', function () {
   it('break correctly', function () {
     const regExp = new RegExp(tibetan, 'gu')
-    testBreak(regExp, 'བསྟན་འཛིན་རྒྱ་མཚོ།', ['བ', 'སྟ', 'ན', '་', 'འ', 'ཛི', 'ན', '་', 'རྒྱ', '་', 'མ', 'ཚོ', '།'])
+    testBreak(regExp, 'གཟིགས་དང་', ['ག', 'ཟི', 'ག', 'ས', '་', 'ད', 'ང', '་'])
+    testBreak(regExp, 'ལགས་མིན་', ['ལ', 'ག', 'ས', '་', 'མི', 'ན', '་'])
   })
 })
