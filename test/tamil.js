@@ -3,7 +3,7 @@
 import {tamil} from '../src/tamil'
 import {testBreak} from './helper'
 
-describe('WordBreakBengali', function () {
+describe('WordBreakTamil', function () {
   it('break correctly', function () {
     const regExp = new RegExp(tamil, 'gu')
     testBreak(regExp, 'ஹலோ', ['ஹ', 'லோ'])
