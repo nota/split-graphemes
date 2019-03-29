@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {devanagari} from '../src/devanagari'
-import {testBreak} from './helper'
+import { devanagari } from '../src/devanagari'
+import { testBreak } from './helper'
 
 describe('WordBreakDevanagari', function () {
   it('break correctly', function () {

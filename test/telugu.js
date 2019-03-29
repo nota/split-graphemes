@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {telugu} from '../src/telugu'
-import {testBreak} from './helper'
+import { telugu } from '../src/telugu'
+import { testBreak } from './helper'
 
 describe('WordBreakTelugu', function () {
   it('break correctly', function () {

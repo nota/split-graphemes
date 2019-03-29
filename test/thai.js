@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {thai} from '../src/thai'
-import {testBreak} from './helper'
+import { thai } from '../src/thai'
+import { testBreak } from './helper'
 
 describe('WordBreakThai', function () {
   it('break correctly', function () {

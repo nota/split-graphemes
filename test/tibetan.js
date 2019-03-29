@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {tibetan} from '../src/tibetan'
-import {testBreak} from './helper'
+import { tibetan } from '../src/tibetan'
+import { testBreak } from './helper'
 
 describe('WordBreakTibetan', function () {
   it('break correctly', function () {
