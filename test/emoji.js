@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {emojiVariation, keyCap, countryFlag} from '../src/emoji'
-import {testBreak} from './helper'
+import { emojiVariation, keyCap, countryFlag } from '../src/emoji'
+import { testBreak } from './helper'
 
 describe('WordBreakEmoji', function () {
   it('break correctly keyCap', function () {

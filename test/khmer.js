@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {khmer} from '../src/khmer'
-import {testBreak} from './helper'
+import { khmer } from '../src/khmer'
+import { testBreak } from './helper'
 
 describe('WordBreakKhmer', function () {
   it('break correctly', function () {

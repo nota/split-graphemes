@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-import {tamil} from '../src/tamil'
-import {testBreak} from './helper'
+import { tamil } from '../src/tamil'
+import { testBreak } from './helper'
 
 describe('WordBreakTamil', function () {
   it('break correctly', function () {
