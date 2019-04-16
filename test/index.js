@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 import { assert } from 'chai'
-import { splitGraphemes } from '../lib/'
+import { splitGraphemes } from '../'
 
 function testBreak (source, results) {
   const res = splitGraphemes(source)
