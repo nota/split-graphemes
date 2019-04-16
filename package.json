@@ -10,7 +10,7 @@
     "pretest": "npm run build",
     "test": "run-s test:*",
     "test:standard": "standard",
-    "test:mocha": "mocha test/*.js -r @babel/register -r @babel/polyfill --timeout 20000 --exit",
+    "test:mocha": "mocha test/*.js -r @babel/register -r @babel/polyfill --exit",
     "prepublishOnly": "npm test"
   },
   "keywords": [
