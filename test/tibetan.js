@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import { tibetan } from '../src/tibetan'
+import { tibetan } from '../lib/tibetan'
 import { testBreak } from './helper'
 
 describe('WordBreakTibetan', function () {

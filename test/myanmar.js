@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import { myanmar } from '../src/myanmar'
+import { myanmar } from '../lib/myanmar'
 import { testBreak } from './helper'
 
 describe('WordBreakMyanmar', function () {

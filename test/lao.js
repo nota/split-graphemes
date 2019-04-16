@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import { lao } from '../src/lao'
+import { lao } from '../lib/lao'
 import { testBreak } from './helper'
 
 describe('WordBreakLao', function () {
