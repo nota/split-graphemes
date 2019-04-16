@@ -7,7 +7,6 @@
     "build": "run-s build:*",
     "build:clean": "if test -d ./lib; then rm -r ./lib; fi",
     "build:babel": "babel src/ --out-dir lib/",
-    "watch": "npm run build -- --watch",
     "pretest": "npm run build",
     "test": "run-s test:*",
     "test:standard": "standard",
