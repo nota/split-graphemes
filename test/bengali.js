@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import { bengali } from '../src/bengali'
+import { bengali } from '../lib/bengali'
 import { testBreak } from './helper'
 
 describe('WordBreakBengali', function () {

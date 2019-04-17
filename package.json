@@ -6,12 +6,12 @@
   "scripts": {
     "build": "run-s build:*",
     "build:clean": "if test -d ./lib; then rm -r ./lib; fi",
-    "build:babel": "babel src/ --out-dir lib/ --minified",
-    "watch": "npm run build -- --watch",
+    "build:babel": "babel src/ --out-dir lib/",
+    "pretest": "npm run build",
     "test": "run-s test:*",
     "test:standard": "standard",
     "test:mocha": "mocha test/*.js -r babel-register -r babel-polyfill --timeout 20000 --exit",
-    "release": "npm run build && npm run test && npm publish"
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "grapheme",

@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import { tamil } from '../src/tamil'
+import { tamil } from '../lib/tamil'
 import { testBreak } from './helper'
 
 describe('WordBreakTamil', function () {
