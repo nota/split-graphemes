@@ -11,7 +11,8 @@
     "test": "run-s test:*",
     "test:standard": "standard",
     "test:mocha": "mocha test/*.js -r @babel/register -r @babel/polyfill --exit",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm test",
+    "postpublish": "git push origin --tags && git push origin master"
   },
   "keywords": [
     "grapheme",
