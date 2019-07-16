@@ -1,5 +1,6 @@
 import { bengali } from './bengali'
 import { devanagari } from './devanagari'
+import { gujarati } from './gujarati'
 import { kannada } from './kannada'
 import { khmer } from './khmer'
 import { lao } from './lao'
@@ -13,7 +14,7 @@ import { countryFlag, keyCap, emojiVariation } from './emoji'
 
 const patterns = [
   countryFlag, keyCap, emojiVariation,
-  bengali, devanagari, kannada, khmer, lao, malayalam, myanmar,
+  bengali, devanagari, gujarati, kannada, khmer, lao, malayalam, myanmar,
   tamil, telugu, thai, tibetan,
   '.'
 ]
