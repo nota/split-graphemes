@@ -15,4 +15,9 @@ describe('WordBreakJapaneseHiragana', function () {
     testBreak(regExp, 'ごん゙に゙ぢば', ['ご', 'ん゙', 'に゙', 'ぢ', 'ば'])
     testBreak(regExp, 'パピプペポ', ['パ', 'ピ', 'プ', 'ペ', 'ポ'])
   })
+
+  it('does not break fullsize soundmark', function () {
+    testBreak(regExp, 'こ゛ん゛', ['こ', '゛', 'ん', '゛'])
+    testBreak(regExp, 'ハ゜ヒ゜', ['ハ', '゜', 'ヒ', '゜'])
+  })
 })

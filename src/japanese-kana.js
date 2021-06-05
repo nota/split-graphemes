@@ -4,6 +4,7 @@
 
 const hiragana = '[\\u{3041}-\\u{3096}\\u{309D}-\\u{309F}]'
 const katakana = '[\\u{30A0}-\\u{30FF}]'
-const voiceSoundMark = '[\\u{3099}-\\u{309C}]' // NFD
+const halfSizeSoundMark = '[\\u{3099}-\\u{309A}]' // soundmark NFD
+const fullSizeSoundMark = '[\\u{309B}-\\u{309C}]'
 
-export const japaneseKana = `(${katakana}|${hiragana})${voiceSoundMark}?`
+export const japaneseKana = `((${katakana}|${hiragana})${halfSizeSoundMark}?|${fullSizeSoundMark})`
