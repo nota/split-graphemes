@@ -4,6 +4,6 @@
 
 const hiragana = '[\\u{3041}-\\u{3096}\\u{309D}-\\u{309F}]'
 const katakana = '[\\u{30A0}-\\u{30FF}]'
-const voiceSoundMark = '[\\u{3099}-\\u{309C}]'
+const voiceSoundMark = '[\\u{3099}-\\u{309C}]' // NFD
 
 export const japaneseKana = `(${katakana}|${hiragana})${voiceSoundMark}?`
