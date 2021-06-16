@@ -33,9 +33,10 @@ Array.from('ប៉ុស្ដិ៍') // ['ប', '៉', 'ុ', 'ស', '្', '�
 splitGraphemes('ប៉ុស្ដិ៍') // ['ប៉ុ', 'ស្ដិ៍']
 ```
 
-### Japanese
+### Japanese NFD
 ```js
-splitGraphemes('こんにちは') // ['こ', 'ん', 'に', 'ち', 'は']
+splitGraphemes('ごん゙に゙ぢば') // ['ご', 'ん゙', 'に゙', 'ぢ', 'ば']
+splitGraphemes('パピプペポ') // ['パ', 'ピ', 'プ', 'ペ', 'ポ']
 ```
 
 ### English
@@ -49,6 +50,7 @@ The list of characters is at [here](https://github.com/nota/split-graphemes/tree
 - [Bengali](https://www.unicode.org/charts/PDF/U0980.pdf)
 - [Devanagari](https://www.unicode.org/charts/PDF/U0900.pdf)
 - [Gujarati](https://www.unicode.org/charts/PDF/U0A80.pdf)
+- [Japanese Hiragana](https://www.unicode.org/charts/PDF/U3040.pdf) and [Katakana](https://www.unicode.org/charts/PDF/U30A0.pdf) NFD
 - [Kannada](https://www.unicode.org/charts/PDF/U0C80.pdf)
 - [Khmer](https://www.unicode.org/charts/PDF/U1780.pdf)
 - [Lao](https://www.unicode.org/charts/PDF/U0E80.pdf)
