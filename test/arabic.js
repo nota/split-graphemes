@@ -18,9 +18,9 @@ describe('WordBreakArabic', function () {
       'ا'
     ])
 
-    const japan = 'نِيهُون'
-    assert.lengthOf(japan, 7)
-    testBreak(regExp, japan, [
+    const note = 'نِيهُون'
+    assert.lengthOf(note, 7)
+    testBreak(regExp, note, [
       'نِ',
       'ي',
       'هُ',

@@ -1,6 +1,9 @@
-// spec
-// https://www.unicode.org/charts/PDF/U0600.pdf
-// https://www.unicode.org/charts/PDF/U0750.pdf
+// Arabic
+//  https://www.unicode.org/charts/PDF/U0600.pdf
+//  https://unicode-table.com/blocks/arabic/
+// Arabic supplement
+//  https://www.unicode.org/charts/PDF/U0750.pdf
+//  https://unicode-table.com/blocks/arabic-supplement/
 
 const arabicLetter = '\u0620-\u064A\u066E-\u066F\u0671-\u06D5\u06EE-\u06EF\u06FA-\u06FF'
 const arabicSupplementLetter = '\u0750-\u077F'
