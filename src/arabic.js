@@ -1,11 +1,11 @@
 // spec
-// https://www.unicode.org/charts/PDF/U0600.pdf done
+// https://www.unicode.org/charts/PDF/U0600.pdf
 // https://www.unicode.org/charts/PDF/U0750.pdf
-// https://www.unicode.org/charts/PDF/UFB00.pdf
-// https://www.unicode.org/charts/PDF/UFB50.pdf
-// https://www.unicode.org/charts/PDF/UFE70.pdf
 
-const letter = '[\\u{0620}-\\u{064A}\\u{066E}-\\u{066F}\\u{0671}-\\u{06D5}\\u{06EE}-\\u{06EF}\\u{06FA}-\\u{06FF}]'
-const combiningMark = '[\\u{064B}-\\u{065F}\\u{0670}]'
+const arabicLetter = '\u0620-\u064A\u066E-\u066F\u0671-\u06D5\u06EE-\u06EF\u06FA-\u06FF'
+const arabicSupplementLetter = '\u0750-\u077F'
+
+const letter = `[${arabicLetter}${arabicSupplementLetter}]`
+const combiningMark = '[\u064B-\u065F\u0670]'
 
 export const arabic = `${letter}${combiningMark}?`
