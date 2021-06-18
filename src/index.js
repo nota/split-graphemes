@@ -1,3 +1,4 @@
+import { arabic } from './arabic'
 import { bengali } from './bengali'
 import { devanagari } from './devanagari'
 import { gujarati } from './gujarati'
@@ -15,6 +16,7 @@ import { countryFlag, keyCap, emojiVariation } from './emoji'
 
 const patterns = [
   countryFlag, keyCap, emojiVariation,
+  arabic,
   bengali, devanagari, gujarati,
   japaneseKana,
   kannada, khmer, lao, malayalam, myanmar,
