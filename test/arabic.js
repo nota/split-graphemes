@@ -5,9 +5,9 @@ import { arabic } from '../lib/arabic'
 import { testBreak } from './helper'
 
 describe('WordBreakArabic', function () {
-  it('break correctly', function () {
-    const regExp = new RegExp(arabic, 'gu')
+  const regExp = new RegExp(arabic, 'gu')
 
+  it('breaks single letters', function () {
     const hello = 'مرحبا'
     assert.lengthOf(hello, 5)
     testBreak(regExp, hello, [
@@ -17,7 +17,9 @@ describe('WordBreakArabic', function () {
       'ب',
       'ا'
     ])
+  })
 
+  it('breaks letter + combining mark', function () {
     const note = 'نِيهُون'
     assert.lengthOf(note, 7)
     testBreak(regExp, note, [
@@ -26,6 +28,18 @@ describe('WordBreakArabic', function () {
       'هُ',
       'و',
       'ن'
+    ])
+  })
+
+  it('breaks single letter + multiple combining marks', function () {
+    const nippon = 'نِيپُّونْ'
+    assert.lengthOf(nippon, 9)
+    testBreak(regExp, nippon, [
+      'نِ',
+      'ي',
+      'پُّ',
+      'و',
+      'نْ'
     ])
   })
 })

@@ -11,4 +11,4 @@ const arabicSupplementLetter = '\u0750-\u077F'
 const letter = `[${arabicLetter}${arabicSupplementLetter}]`
 const combiningMark = '[\u064B-\u065F\u0670]'
 
-export const arabic = `${letter}${combiningMark}?`
+export const arabic = `${letter}${combiningMark}*`
