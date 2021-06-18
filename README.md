@@ -47,6 +47,7 @@ splitGraphemes('Hello') // ['H', 'e', 'l', 'l', 'o']
 ## Supported ligature characters
 The list of characters is at [here](https://github.com/nota/split-graphemes/tree/master/src).
 - [Emoji](https://en.wikipedia.org/wiki/Unicode_block)
+- [Arabic](https://www.unicode.org/charts/PDF/U0600.pdf) and [Arabic supplement](https://www.unicode.org/charts/PDF/U0750.pdf)
 - [Bengali](https://www.unicode.org/charts/PDF/U0980.pdf)
 - [Devanagari](https://www.unicode.org/charts/PDF/U0900.pdf)
 - [Gujarati](https://www.unicode.org/charts/PDF/U0A80.pdf)
