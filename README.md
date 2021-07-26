@@ -51,6 +51,7 @@ The list of characters is at [here](https://github.com/nota/split-graphemes/tree
 - [Bengali](https://www.unicode.org/charts/PDF/U0980.pdf)
 - [Devanagari](https://www.unicode.org/charts/PDF/U0900.pdf)
 - [Gujarati](https://www.unicode.org/charts/PDF/U0A80.pdf)
+- [Hebrew](https://www.unicode.org/charts/PDF/U0590.pdf)
 - [Japanese Hiragana](https://www.unicode.org/charts/PDF/U3040.pdf) and [Katakana](https://www.unicode.org/charts/PDF/U30A0.pdf) NFD
 - [Kannada](https://www.unicode.org/charts/PDF/U0C80.pdf)
 - [Khmer](https://www.unicode.org/charts/PDF/U1780.pdf)
@@ -61,5 +62,3 @@ The list of characters is at [here](https://github.com/nota/split-graphemes/tree
 - [Telugu](https://www.unicode.org/charts/PDF/U0C00.pdf)
 - [Thai](https://www.unicode.org/charts/PDF/U0E00.pdf)
 - [Tibetan](https://www.unicode.org/charts/PDF/U0F00.pdf)
-
-
