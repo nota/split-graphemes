@@ -29,7 +29,7 @@ describe('WordBreakHebrew', function () {
     ])
   })
 
-  it('breaks letter + multiple combining marks', function () {
+  it('breaks single letter + multiple combining marks', function () {
     const israel = 'יִשְׂרָאֵל'
     assert.lengthOf(israel, 10)
     testBreak(regExp, israel, [
