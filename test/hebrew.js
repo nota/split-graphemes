@@ -19,6 +19,16 @@ describe('WordBreakHebrew', function () {
     ])
   })
 
+  it('breaks letter + combining mark', function () {
+    const japan = 'יָפּן'
+    assert.lengthOf(japan, 5)
+    testBreak(regExp, japan, [
+      'יָ',
+      'פּ',
+      'ן'
+    ])
+  })
+
   it('breaks letter + multiple combining marks', function () {
     const israel = 'יִשְׂרָאֵל'
     assert.lengthOf(israel, 10)
