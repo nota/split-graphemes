@@ -18,4 +18,16 @@ describe('WordBreakHebrew', function () {
       'ל'
     ])
   })
+
+  it('breaks letter + multiple combining marks', function () {
+    const israel = 'יִשְׂרָאֵל'
+    assert.lengthOf(israel, 10)
+    testBreak(regExp, israel, [
+      'יִ',
+      'שְׂ',
+      'רָ',
+      'אֵ',
+      'ל'
+    ])
+  })
 })
