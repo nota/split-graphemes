@@ -8,6 +8,7 @@ export const keyCap = '[0-9#\\*][\\u{FE0F}]?\\u{20E3}'
 const emojiRange = [
   '[\\u{2600}-\\u{26FF}]', // Miscellaneous Symbols
   '[\\u{2700}-\\u{27BF}]', // Dingbats
+  '[\\u{2B00}-\\u{2BFF}]', // Miscellaneous Symbols and Arrows
   '[\\u{1F300}-\\u{1F5FF}]', // Miscellaneous Symbols and Pictographs
   '[\\u{1F600}-\\u{1F64F}]', // Emoticons
   '[\\u{1F680}-\\u{1F6FF}]', // Transport and Map Symbols
