@@ -9,12 +9,12 @@ const emojiRange = [
   '[\\u{2600}-\\u{26FF}]', // Miscellaneous Symbols
   '[\\u{2700}-\\u{27BF}]', // Dingbats
   '[\\u{3200}-\\u{32FF}]', // Enclosed CJK Letters and Months
+  '[\\u{1F200}-\\u{1F26F}]', // Enclosed Ideographic Supplement
   '[\\u{1F300}-\\u{1F5FF}]', // Miscellaneous Symbols and Pictographs
   '[\\u{1F600}-\\u{1F64F}]', // Emoticons
   '[\\u{1F680}-\\u{1F6FF}]', // Transport and Map Symbols
   '[\\u{1F700}-\\u{1F77F}]', // Alchemical Symbols
-  '[\\u{1F900}-\\u{1F9FF}]', // Supplemental Symbols and Pictographs
-  '[\\u{1F200}-\\u{1F26F}]' // Enclosed Ideographic Supplement
+  '[\\u{1F900}-\\u{1F9FF}]' // Supplemental Symbols and Pictographs
 ]
 const emoji = `(${emojiRange.join('|')})`
 const zeroWidthJoinder = '\\u{200D}'
