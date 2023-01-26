@@ -60,5 +60,23 @@ describe('WordBreakEmoji', function () {
       testBreak(regExp, '☎☎️', ['☎', '☎️'])
       testBreak(regExp, '🤜🏾🤘🏾', ['🤜🏾', '🤘🏾'])
     })
+
+    it('enclosed cjk letters and months', function () {
+      // u3297 uFE0F
+      testBreak(regExp, '㊗️', ['㊗️'])
+      // u3299 uFE0F
+      testBreak(regExp, '㊙️', ['㊙️'])
+    })
+
+    it('enclosed ideographic supplement', function () {
+      // u1F202 uFE0F
+      testBreak(regExp, '🈂️', ['🈂️'])
+      // u1F21A uFE0F
+      testBreak(regExp, '🈚️', ['🈚️'])
+      // u1F22F uFE0F
+      testBreak(regExp, '🈯️', ['🈯️'])
+      // u1F237 uFE0F
+      testBreak(regExp, '🈷️', ['🈷️'])
+    })
   })
 })
