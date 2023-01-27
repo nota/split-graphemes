@@ -66,6 +66,12 @@ describe('WordBreakEmoji', function () {
       testBreak(regExp, '㊗️', ['㊗️'])
       // u3299 uFE0F
       testBreak(regExp, '㊙️', ['㊙️'])
+
+      // without uFE0F emoji variation sequence
+      // u3297
+      testBreak(regExp, '㊗', ['㊗'])
+      // u3299
+      testBreak(regExp, '㊙', ['㊙'])
     })
 
     it('enclosed ideographic supplement', function () {
@@ -77,6 +83,16 @@ describe('WordBreakEmoji', function () {
       testBreak(regExp, '🈯️', ['🈯️'])
       // u1F237 uFE0F
       testBreak(regExp, '🈷️', ['🈷️'])
+
+      // without uFE0F emoji variation sequence
+      // u1F202
+      testBreak(regExp, '🈂', ['🈂'])
+      // u1F21A
+      testBreak(regExp, '🈚', ['🈚'])
+      // u1F22F
+      testBreak(regExp, '🈯', ['🈯'])
+      // u1F237
+      testBreak(regExp, '🈷', ['🈷'])
     })
   })
 })
