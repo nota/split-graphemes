@@ -3,7 +3,7 @@
 Divide ligature letters such as Thai, Khmer letters and complex emoji into array of [graphemes](https://en.wikipedia.org/wiki/Grapheme).
 You can simply use this library instead of `Array.from` to get graphemes.
 
-[![CircleCI](https://circleci.com/gh/nota/split-graphemes/tree/master.svg?style=svg)](https://circleci.com/gh/nota/split-graphemes/tree/master)
+[![Tests](https://github.com/nota/split-graphemes/actions/workflows/test-node.yml/badge.svg?branch=master)](https://github.com/nota/split-graphemes/actions/workflows/test-node.yml)
 
 ## Installation
 ```
