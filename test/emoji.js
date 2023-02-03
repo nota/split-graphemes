@@ -60,5 +60,9 @@ describe('WordBreakEmoji', function () {
       testBreak(regExp, '☎☎️', ['☎', '☎️'])
       testBreak(regExp, '🤜🏾🤘🏾', ['🤜🏾', '🤘🏾'])
     })
+
+    it('blackcat', function () {
+      testBreak(regExp, '🐈‍⬛', ['🐈‍⬛'])
+    })
   })
 })
